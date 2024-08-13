@@ -4,7 +4,6 @@ const Docs = ({params}: {
         slug: string[];
     };
 }) => {
-    //? If we don't wanna show the docs home page, we need to remove first [] of the [[...slug]] in the file name, like: [...slug]
     if (params.slug?.length === 2) {
         return (
             <div>
