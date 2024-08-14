@@ -1,8 +1,8 @@
 "use client";
 
 import {FC, ReactNode, useState} from 'react';
-import Link from "next/link";
 import {usePathname} from "next/navigation";
+import Link from "next/link";
 
 const navLinks = [
     {name: 'Register', href: '/register'},
@@ -10,8 +10,7 @@ const navLinks = [
     {name: 'Forgot Password', href: '/forgot-password'},
 ]
 
-const AuthLayout: FC<{ children: ReactNode }> = ({children}) => {
-
+const AuthTemplate: FC<{ children: ReactNode }> = ({children}) => {
     const [input, setInput] = useState('');
 
     const pathname = usePathname();
@@ -38,4 +37,4 @@ const AuthLayout: FC<{ children: ReactNode }> = ({children}) => {
     );
 };
 
-export default AuthLayout;
+export default AuthTemplate;

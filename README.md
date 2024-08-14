@@ -17,3 +17,7 @@ bun dev
 
 ### Branches
 To see different features, checkout to the branches.
+
+### Next js Hierarchy
+
+![img.png](img.png)

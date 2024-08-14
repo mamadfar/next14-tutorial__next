@@ -1,5 +1,10 @@
+"use client";
+
 import {notFound} from "next/navigation";
 
+const getRandomInt = (count: number) => {
+    return Math.floor(Math.random() * count);
+}
 
 const ReviewDetail = ({params}: {
     params: {
@@ -8,6 +13,13 @@ const ReviewDetail = ({params}: {
     };
 }) => {
     const {productId, reviewId} = params;
+
+    const random = getRandomInt(2)
+
+    if (random === 1) {
+        throw new Error('Error loading review');
+    }
+
     if (parseInt(reviewId) > 1000) notFound();
     return (
         <div>

@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{padding: "0.5rem 1rem"}} className={inter.className}>
+      <body className={`p-4 min-h-screen flex ${inter.className}`}>
       <main>{children}</main>
-      <footer>Main footer</footer>
+      <footer className="mt-auto">Main footer</footer>
       </body>
     </html>
   );
