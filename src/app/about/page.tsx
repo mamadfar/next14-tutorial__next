@@ -6,7 +6,7 @@ export const metadata = {
 const About = () => {
     return (
         <div>
-            About
+            About me
         </div>
     );
 };
